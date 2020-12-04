@@ -43,10 +43,10 @@ jobs:
           run: |
            bash CnUnicom.sh ${haoma} ${mm} ${appid}
            
-#         - name: Run 号码2
-#           env:
-#            haoma: ${{ secrets.HAOMAQ }}
-#            mm: ${{ secrets.MMQ }}
-#            appid: ${{ secrets.APPIDQ }}
-#           run: |
-#            bash CnUnicom.sh ${haoma} ${mm} ${appid}
+        - name: Run 号码2
+          env:
+           haoma: ${{ secrets.HAOMAQ }}
+           mm: ${{ secrets.MMQ }}
+           appid: ${{ secrets.APPIDQ }}
+          run: |
+           bash CnUnicom.sh ${haoma} ${mm} ${appid}
