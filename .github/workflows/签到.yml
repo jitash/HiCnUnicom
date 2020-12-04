@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 30 04,23 * * ?
+    - cron: 10 4 * * ?
   watch:
     types: started
     
@@ -37,56 +37,16 @@ jobs:
  
         - name: Run 号码1
           env:
-           haoma: ${{ secrets.HAOMA }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
+           haoma: ${{ secrets.HAOMAJ }}
+           mm: ${{ secrets.MMJ }}
+           appid: ${{ secrets.APPIDJ }}
           run: |
            bash CnUnicom.sh ${haoma} ${mm} ${appid}
            
         - name: Run 号码2
           env:
-           haoma: ${{ secrets.HAOMA2 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh ${haoma} ${mm} ${appid}
-
-        - name: Run 号码3
-          env:
-           haoma: ${{ secrets.HAOMA3 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh ${haoma} ${mm} ${appid}
-           
-        - name: Run 号码4
-          env:
-           haoma: ${{ secrets.HAOMA4 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh ${haoma} ${mm} ${appid}
-           
-        - name: Run 号码5
-          env:
-           haoma: ${{ secrets.HAOMA5 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh ${haoma} ${mm} ${appid}
-           
-        - name: Run 号码6
-          env:
-           haoma: ${{ secrets.HAOMA6 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh ${haoma} ${mm} ${appid}
-           
-        - name: Run 号码7
-          env:
-           haoma: ${{ secrets.HAOMA7 }}
-           mm: ${{ secrets.MM2 }}
-           appid: ${{ secrets.APPID }}
+           haoma: ${{ secrets.HAOMAQ }}
+           mm: ${{ secrets.MMQ }}
+           appid: ${{ secrets.APPIDQ }}
           run: |
            bash CnUnicom.sh ${haoma} ${mm} ${appid}
